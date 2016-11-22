@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="testModelStoreContainer" CdmEntityContainer="testEntities">
+    <EntitySetMapping Name="data_history">
+      <EntityTypeMapping TypeName="testModel.data_history">
+        <MappingFragment StoreEntitySet="data_history">
+          <ScalarProperty Name="action" ColumnName="action" />
+          <ScalarProperty Name="revision" ColumnName="revision" />
+          <ScalarProperty Name="dt_datetime" ColumnName="dt_datetime" />
+          <ScalarProperty Name="idusers" ColumnName="idusers" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="zoom" ColumnName="zoom" />
+          <ScalarProperty Name="filter" ColumnName="filter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="testModel.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="idusers" ColumnName="idusers" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="zoom" ColumnName="zoom" />
+          <ScalarProperty Name="filter" ColumnName="filter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
